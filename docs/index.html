@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação Interna - TechVision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Documentação</h2>
+            <ul>
+                <li><a href="#introducao" class="active">Introdução</a></li>
+                <li><a href="#boas-praticas">Boas Práticas</a></li>
+                <li><a href="#seguranca">Segurança</a></li>
+                <li><a href="#devops">DevOps</a></li>
+                <li><a href="#apis">APIs</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Documentação Interna da TechVision</h1>
+            <p>Bem-vindo à documentação interna da TechVision. Aqui você encontrará guias, melhores práticas e recursos para apoiar o trabalho da nossa equipe.</p>
+
+            <section id="introducao">
+                <h2>Introdução</h2>
+                <p>Esta documentação é destinada exclusivamente aos membros da equipe TechVision. Ela contém informações confidenciais sobre processos, ferramentas e diretrizes da empresa.</p>
+                <blockquote>
+                    "A documentação é o mapa que guia nossa jornada tecnológica."
+                </blockquote>
+            </section>
+
+            <section id="boas-praticas">
+                <h2>Guia de Boas Práticas</h2>
+                <p>Para garantir a qualidade e consistência dos nossos projetos, seguimos estas diretrizes:</p>
+                <h3>Desenvolvimento</h3>
+                <ul>
+                    <li>Use controle de versão (Git) para todos os projetos</li>
+                    <li>Escreva código limpo e bem documentado</li>
+                    <li>Realize revisões de código (code reviews)</li>
+                    <li>Mantenha testes automatizados</li>
+                </ul>
+                <h3>Versionamento</h3>
+                <p>Utilizamos <a href="https://semver.org/" target="_blank">Semantic Versioning</a> para versionar nossas aplicações:</p>
+                <pre><code>MAJOR.MINOR.PATCH
+- MAJOR: mudanças incompatíveis
+- MINOR: novas funcionalidades compatíveis
+- PATCH: correções de bugs</code></pre>
+            </section>
+
+            <section id="seguranca">
+                <h2>Segurança da Informação</h2>
+                <p>A segurança é prioridade máxima na TechVision. Todos os membros devem seguir estas práticas:</p>
+                <h3>Autenticação</h3>
+                <ul>
+                    <li>Use senhas fortes e únicas</li>
+                    <li>Ative autenticação de dois fatores (2FA)</li>
+                    <li>Não compartilhe credenciais</li>
+                </ul>
+                <h3>Dados Sensíveis</h3>
+                <p>Sempre criptografe dados sensíveis em trânsito e em repouso. Use ferramentas como:</p>
+                <ul>
+                    <li>HTTPS para comunicação web</li>
+                    <li>Vault para gerenciamento de secrets</li>
+                    <li>Encriptação de disco para armazenamentos</li>
+                </ul>
+            </section>
+
+            <section id="devops">
+                <h2>Práticas DevOps</h2>
+                <p>Implementamos DevOps para acelerar entregas e melhorar qualidade:</p>
+                <h3>Ferramentas</h3>
+                <ul>
+                    <li><strong>CI/CD:</strong> GitHub Actions, Jenkins</li>
+                    <li><strong>Containerização:</strong> Docker, Kubernetes</li>
+                    <li><strong>Monitoramento:</strong> Prometheus, Grafana</li>
+                    <li><strong>Logs:</strong> ELK Stack</li>
+                </ul>
+                <h3>Processos</h3>
+                <p>Nossos pipelines incluem: build, teste, segurança, deploy e monitoramento contínuo.</p>
+            </section>
+
+            <section id="apis">
+                <h2>Desenvolvimento de APIs</h2>
+                <p>Para APIs RESTful, seguimos os princípios REST e estas convenções:</p>
+                <h3>Estrutura de URLs</h3>
+                <pre><code>GET    /api/v1/users          # Listar usuários
+GET    /api/v1/users/{id}      # Obter usuário específico
+POST   /api/v1/users           # Criar novo usuário
+PUT    /api/v1/users/{id}      # Atualizar usuário
+DELETE /api/v1/users/{id}      # Remover usuário</code></pre>
+                <h3>Códigos de Status</h3>
+                <ul>
+                    <li><code>200 OK</code> - Sucesso</li>
+                    <li><code>201 Created</code> - Recurso criado</li>
+                    <li><code>400 Bad Request</code> - Requisição inválida</li>
+                    <li><code>401 Unauthorized</code> - Não autorizado</li>
+                    <li><code>404 Not Found</code> - Recurso não encontrado</li>
+                    <li><code>500 Internal Server Error</code> - Erro interno</li>
+                </ul>
+            </section>
+
+            <section id="suporte">
+                <h2>Suporte e Contato</h2>
+                <p>Para dúvidas ou suporte técnico:</p>
+                <ul>
+                    <li><strong>Email:</strong> suporte@techvision.local</li>
+                    <li><strong>Slack:</strong> #tech-support</li>
+                    <li><strong>Wiki:</strong> <a href="#">Wiki Interna</a></li>
+                </ul>
+                <p>Lembre-se: a documentação é um trabalho em progresso. Contribua com atualizações!</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 TechVision Consultoria. Documentação Interna - Confidencial</p>
+    </footer>
+</body>
+</html>
